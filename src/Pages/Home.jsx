@@ -14,13 +14,29 @@ import service5 from '../Assets/service5.jpg'
 import service6 from '../Assets/service6.jpg'
 import service7 from '../Assets/service7.jpg'
 import service8 from '../Assets/service8.jpg'
+import EventCard from '../Componenets/Event_card/EventCard'
 
 function Home() {
   return (
       <>
         <div className='main-page'>
-              <div >
                   <img className='cover-image' src={cover} alt='cover image'/>
+              
+              <div className='intro-block'>
+                  <div className='container intro'>
+                  <h5 className='intro-topic'>Welcome to Central Environment Authority
+                  </h5>
+                  <div className='intro-body'>
+                      <p className='intro-para'>
+                          The Central Environmental Authority (CEA) was established in August 1981 under the provision of the
+                          National Environmental Act No:47 of 1980. The Ministry of Environment and Natural Resources (ME&NR)
+                          which was established in December 2001 has the overall responsibility in the affairs of the CEA with
+                          the objective of integrating environmental considerations in the development process of the country.
+                          The CEA was given wider regulatory powers under the National Environment(Amendment) Acts No:56 of
+                          1988 and No:53 of 2000.
+                      </p> 
+                  </div>
+                  </div> 
               </div>
 
               <div className='president-block'>
@@ -87,9 +103,18 @@ function Home() {
                       image={service8}
                   />
                   </div>
-                  
+              </div>
+              <div className='container event-block'>
+              <h5 className='event-topic'>Events & News</h5>
+                      <EventCard/>
+                   </div>
           </div>
-        </div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
       </>
   )
 }

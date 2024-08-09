@@ -10,7 +10,7 @@
     justify-content: center;
     height: max-content;
     padding: 20px;
-    width: 398px;
+    width: 420px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.351);   
     gap: 30px;
     border-radius: 8px;
@@ -34,7 +34,6 @@
 .leader1-img{
     height: 100px;
     width: 100px;
-    border-radius: 50%;
     display: flex;
 }
 
@@ -56,6 +55,7 @@
 
 .read-more{
    color: #2319af;
+   cursor: pointer;
 }
 
 

@@ -26,14 +26,14 @@ function Navbar(onSearch) {
       <div className='navbar-new'>
              <ul className={`navbar-warp ${clicked ? 'active' : ''}`}>
                   <li className='nav-element'><NavLink className='nav-links' to='/'>Home</NavLink></li>
-                  <li className='nav-element'><NavLink className='nav-links'>About Us</NavLink></li>
-                  <li className='nav-element'><NavLink className='nav-links'>Services</NavLink></li>
-                  <li className='nav-element'><NavLink className='nav-links'>Divisions</NavLink></li>
-                  <li className='nav-element'><NavLink className='nav-links'>Media</NavLink></li>
-                  <li className='nav-element'><NavLink className='nav-links'>Publications</NavLink></li>
-                  <li className='nav-element'><NavLink className='nav-links'>Regulations</NavLink></li>
-                  <li className='nav-element'><NavLink className='nav-links'>FAQ</NavLink></li>
-                  <li className='nav-element'><NavLink className='nav-links'>Contact Us</NavLink></li>
+                  <li className='nav-element'><NavLink className='nav-links' to='AboutUs/AboutUs'>About Us</NavLink></li>
+                  <li className='nav-element'><NavLink className='nav-links' to='Services/Services'>Services</NavLink></li>
+                  <li className='nav-element'><NavLink className='nav-links' to='Divisions/Divisions'>Divisions</NavLink></li>
+                  <li className='nav-element'><NavLink className='nav-links' to='Media/Media'>Media</NavLink></li>
+                  <li className='nav-element'><NavLink className='nav-links' to='Publications'>Publications</NavLink></li>
+                  <li className='nav-element'><NavLink className='nav-links' to='Regulations'>Regulations</NavLink></li>
+                  <li className='nav-element'><NavLink className='nav-links' to='FAQ/FAQ'>FAQ</NavLink></li>
+                  <li className='nav-element'><NavLink className='nav-links' to='ContactUs/ContactUs'>Contact Us</NavLink></li>
               </ul> 
 
               <div className='icon-display'>
