@@ -1,0 +1,66 @@
+.ngo-reg-page{
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.guidlines{
+    display: flex;
+    
+}
+
+.heading{
+    color: #044e35d5;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.steps-list{
+    margin-top: 20px;
+}
+.steps{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.download-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-section{
+    margin-bottom: 30px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    width: 800px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.351);   
+    gap: 30px;
+    border-radius: 0px;
+    padding: 20px;
+    padding: 40px 60px;
+}
+
+.download-btn{
+    background-color: #003E29;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 30px;
+    border-radius: 8px;
+    width: 300px;
+    letter-spacing: 0.45px;
+}
+
+
+@media(max-width: 770px){
+    .steps{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+}
