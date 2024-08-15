@@ -67,6 +67,7 @@
 .check-box-data{
     margin-right: 20px;
 }
+
 .confirmation{
     margin-top: 30px;
     margin-bottom: 50px;
@@ -92,6 +93,7 @@
         font-weight: 600; 
         font-size: 17px;
     }
+
     .page-body{
         padding: 10px 50px 50px 50px;
     }
@@ -104,16 +106,26 @@
         font-weight: 600; 
         font-size: 17px;
     }
+
     .page-body{
         padding: 10px 50px 50px 50px;
     }
+
     .form-group {
        display: flex;
       flex-wrap: wrap;
     }
+
    .input-name{
     margin-bottom: 10px;
    }
+
+   .page-topic{
+    font-size: 30px;
+    font-weight: bold;
+    color: #044e35d5;
+    margin-top: 30px;
+}
 }
 
    

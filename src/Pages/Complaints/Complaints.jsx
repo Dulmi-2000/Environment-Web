@@ -68,9 +68,9 @@ function Complaints() {
             </p> 
             </div>
             </div>
-            
+
             <div className='container page-body'> 
-                <h2 className='topic'>Complaint</h2>
+                <h2 className='heading'>Complaint</h2>
                 <hr/>
             <form onSubmit={handleSubmit} className='complaint-form'>
                 <div className="form-group">
