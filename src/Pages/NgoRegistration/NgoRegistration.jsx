@@ -8,21 +8,19 @@ function NgoRegistatrion() {
     <div>
       <PageIntro 
         title="Non-Governmental Environment Organization Registration" 
-                  description="The Non-Governmental Environment Organization Registration in Sri Lanka enables 
-                  NGOs to legally operate and actively engage in environmental 
-                  conservation, public awareness campaigns, and collaborative efforts with government agencies.
-                  By registering, NGOs gain the legal framework necessary to support and lead critical environmental
-                   initiatives, fostering collaboration with governmental bodies to drive meaningful change in conservation and
-                   sustainability efforts nationwide."
+          description="For any inquiries or support, the Central Environmental Authority (CEA) is here to assist you.
+           Whether you need guidance on environmental regulations, want to submit a concern, or simply have questions,
+            our team is ready to help. Contact us via phone, email, or visit our office in Battaramulla. We are committed 
+            to protecting Sri Lanka's environment and
+            ensuring a sustainable future. Reach out to us, and let's work together for a greener tomorrow."
       />
           </div>
           
 
       <div className='container ngo-reg-page'>
-
-        <div className='download-body'>
+       <div className='download-body'>
         <div className='download-section'>
-          <h5 className='heading'>Download the Application</h5>
+          <h5 className='heading-down'>Download the Application</h5>
           <p className='steps'>Please download the application form, complete it, and submit it as instructed. Be sure to follow the guidelines
             provided below for a successful registration.</p>
 
