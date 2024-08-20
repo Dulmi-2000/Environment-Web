@@ -32,7 +32,7 @@ function Complaints() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/complaints', {
+            const response = await fetch('http://localhost:5001/complaints', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -68,7 +68,7 @@ function Complaints() {
             </p> 
             </div>
             </div>
-
+             
             <div className='container page-body'> 
                 <h2 className='heading'>Complaint</h2>
                 <hr/>
@@ -76,7 +76,7 @@ function Complaints() {
                 <div className="form-group">
                     <label className='input-name'>Full Name:</label>
                     <input
-                        className='form-input'
+                        className='form-inputs'
                         type="text"
                         name="fullName"
                         value={formData.fullName}
@@ -89,7 +89,7 @@ function Complaints() {
                 <div className="form-group">
                     <label className='input-name'>Email Address:</label>
                     <input
-                        className='form-input'
+                        className='form-inputs'
                         type="email"
                         name="email"
                         value={formData.email}
@@ -102,7 +102,7 @@ function Complaints() {
                 <div className="form-group">
                     <label className='input-name'>Phone Number:</label>
                     <input
-                        className='form-input'
+                        className='form-inputs'
                         type="tel"
                         name="phone"
                         value={formData.phone}
@@ -115,7 +115,7 @@ function Complaints() {
                 <div className="form-group">
                     <label className='input-name'>Complaint Category:</label>
                         <select
-                        className='form-input'
+                        className='form-inputs'
                         name="category"
                         value={formData.category}
                         onChange={handleChange}
