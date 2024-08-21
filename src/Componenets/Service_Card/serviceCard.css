@@ -21,9 +21,11 @@
    padding: 25px;
 }
 
-.card-title{
+.cards-titles{
     font-size: 16px;
     font-weight: 500;
+    font-weight: 600;
+    color: #044e35d5;
 }
 
 @media(max-width:768px){
