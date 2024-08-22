@@ -27,7 +27,7 @@ function LeaderCard() {
               </div>
               <div className='info-section'>
                   <h5 className='leader-post'>The State Minister</h5>
-                  <p className='leader-name'> Mr. Janaka Wakkumbura</p>
+                  <p className='leader-name'>  Mr. Sathasivam Viyalendiran</p>
               </div>
               </div>
           </div>
