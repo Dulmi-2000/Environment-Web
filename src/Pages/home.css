@@ -1,0 +1,340 @@
+.main-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover-image{
+    height: 450px;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+   
+}
+
+.intro-topic-p{
+    font-size: 36px;
+    font-weight: bold;
+    color: #044e35d5;
+    margin-top: 30px;
+}
+
+/*presidents message*/
+.presidents-section{
+   flex-direction: row;
+   align-items: center;
+   display: flex;
+   gap: 20px;
+ 
+}
+
+.president-block{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #DEEEE0;
+   height: 350px;
+   padding-bottom: 50px;
+}
+ 
+.presidents-img{
+    width: 15vw;
+    height: 14vw;  
+}
+ 
+.presidents-img-section{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+.predents-msg-section{
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.president-topic{
+    font-size: 20px;
+    font-weight: 700;
+    color: #044e35d5;
+}
+
+.president-para{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.read-more-btn{
+    background-color: #003E29;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 30px;
+    border-radius: 8px;
+}
+
+.president-para-small{
+    display: none;
+}
+
+/*leaders info section*/
+
+.home-leader-section{
+    margin-top: 100px;
+    margin-bottom: 100px; 
+}
+
+
+
+/*service cards*/
+.service-cards-block{
+   margin-bottom: 50px;
+   background-color: #DEEEE0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.service-cards{
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.services-topic{
+    font-size: 36px;
+    font-weight: bold;
+    color: #044e35d5;
+    margin-top: 30px;
+}
+
+.event-topic{
+    font-size: 36px;
+    font-weight: bold;
+    color: #044e35d5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.news-events{
+    background-color: #DEEEE0;
+    margin-top: 70px;
+    padding-top: 20px;
+}
+
+
+/*other services*/
+.important-info-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.info-row{
+    display: flex;
+    gap: 50px;
+}
+
+.info-box{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    gap: 50px;
+    align-items: center;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.351); 
+    cursor: pointer;
+}
+
+.service-img-section{
+    display: flex;
+    float: left;
+    margin-left: 10px;
+}
+
+.service-img{
+    height: 60px;
+    margin-left: 40px;
+}
+
+.links{
+    font-size: 20px;
+    text-decoration: none;
+    color: #044e35d5;
+    font-weight: 600;
+}
+
+.other-service-block{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.event-block{
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .presidents-img{
+        width: 25vw;
+        height: 25vw;
+    }
+     
+    .predents-msg-section{
+        height: 200px;
+        padding: 15px;
+    }
+    
+    .president-topic{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .president-para{
+        display: none;
+    }
+     
+    .read-more-btn{
+        font-size: 15px;
+        font-weight: 400;
+        padding: 4px 25px;
+    }
+
+    .president-para-small{
+        display: block;
+        font-size: 16px;
+        font-weight: 400px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .intro-para{
+        font-size: 16px;
+    }
+    .info-box{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        gap: 50px;
+        align-items: center;
+        color: white;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.351); 
+    }
+}
+
+
+
+@media(max-width:770px){
+    .president-block{
+        height: 400px;
+        padding-bottom: 150px;
+    }
+    .home-leader-section{
+        margin-top: 20px;
+        margin-bottom: 100px; 
+    }
+    .info-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info-box{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        gap: 50px;
+        align-items: center;
+        color: white;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.351); 
+    }
+}
+
+
+@media(max-width:500px){
+    .president-para{
+        display: none;
+    }
+
+    .president-para-small{
+        display: block;
+        font-size: 16px;
+        font-weight: 400px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .read-more-btn{
+        font-size: 15px;
+        font-weight: 400;
+        padding: 4px 25px;
+    }
+
+    .presidents-img{
+        width: 25vw;
+        height: 25vw;
+    }
+     
+    .predents-msg-section{
+        height: 200px;
+        padding: 15px;
+    }
+    
+    .president-topic{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .presidents-section{
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .president-block{
+        display: flex;
+        flex-wrap: wrap;
+     }
+     .intro-topic-p{
+        font-size: 30px;
+        font-weight: bold;
+        color: #044e35d5;
+        margin-top: 30px;
+    }
+     .president-block{
+        height: 500px;
+        padding-bottom: 150px;
+    }
+     .links{
+        font-size: 16px;
+        font-weight: 500;
+     } 
+}
+

@@ -1,0 +1,109 @@
+.footer{
+    background-color:  #044e35d5;
+   
+}
+
+.footer-block{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;  
+   
+}
+
+.footer-topics{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.footer-icons{
+   height: 30px;
+   width: 40px;
+   color: white;
+}
+
+.footer-icons-call{
+    height: 20px;
+    width: 35px;
+    color: white;
+ }
+
+ .footer-icons-msg{
+    height: 22px;
+    width: 17px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+
+ .contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+
+ .contact-row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+ }
+
+ .contact-data{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+ }
+
+ .links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+ }
+
+ .quick-links{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+ }
+
+ .bullet{
+    color: white;
+    min-height: 30px;
+    min-width: 30px;
+ }
+
+ .intro-data{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+    line-height: 25px;
+ }
+
+ .fb{
+    color: white;
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+ }
+
+ .utube{
+    color: white;
+    width: 25px;
+    height: 30px;
+    cursor: pointer;
+ }
+
+ .footer-item {
+   flex: 1;
+   margin-top: 60px;
+   margin-bottom: 70px;
+ }
+ 
+ .location-link{
+     text-decoration: none;
+ }

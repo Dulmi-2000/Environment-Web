@@ -1,0 +1,26 @@
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+.photo {
+    margin: 10px;
+    overflow: hidden;
+    flex: 1 0 21%; 
+    max-width: 250px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
