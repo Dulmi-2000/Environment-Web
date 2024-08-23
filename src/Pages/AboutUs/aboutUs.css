@@ -1,0 +1,104 @@
+.about-us-page{
+    margin-bottom: 70px;
+}
+
+.vison-mission{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 50PX;
+}
+
+.about-img{
+    height: 500px;
+    width: 500px;
+}
+
+.vision-heading{
+    font-size: 28px;
+    font-weight: bold;
+    color: #044e35d5;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.vision-para{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 800px;
+}
+
+.one-side{
+    padding: 10px 30px 20px 10px;
+}
+
+.two-side{
+    padding: 50px 30px 20px 10px;
+}
+
+hr.hr-row{
+  border: none; 
+  height: 2px; 
+  background-color: #044e35d5; 
+  margin: 60px auto;
+  border-radius: 5px; 
+}
+
+.leaf-img{
+    height: 30px;
+  
+}
+.objective-row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.obj-para{
+    font-size: 20px;
+    font-weight: 800px;
+}
+
+.objectives{
+    margin-top: 50px;
+}
+
+
+@media(max-width: 1200px){
+    .about-img{
+        height: 400px;
+        width: 400px;
+    }
+    .two-side{
+        padding: 0px 30px 20px 10px;
+    }
+}
+
+
+@media(max-width: 1000px){
+    .about-img{
+        height: 300px;
+        width: 300px;
+    }
+    .two-side{
+        padding: 0px 20px 20px 10px;
+    }
+}
+
+
+@media(max-width: 790px){
+    .about-img{
+        height: 300px;
+        width: 300px;
+    }
+    .two-side{
+        padding: 0px 20px 20px 10px;
+    }
+    .vison-mission{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 50PX;
+        align-items: center;
+    }
+}

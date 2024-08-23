@@ -137,7 +137,7 @@ function Complaints() {
                         value={formData.description}
                         onChange={handleChange}
                             required
-                            className='form-input'
+                            className='form-inputs'
                     ></textarea>
                     </div>
 
@@ -148,7 +148,7 @@ function Complaints() {
                         value={formData.incidentLocation}
                         onChange={handleChange}
                         required
-                        className='form-input'
+                        className='form-inputs'
                     ></textarea>
                 </div>
 

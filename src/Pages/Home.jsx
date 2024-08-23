@@ -14,9 +14,24 @@ import service5 from '../Assets/service5.jpg'
 import service6 from '../Assets/service6.jpg'
 import service7 from '../Assets/service7.jpg'
 import service8 from '../Assets/service8.jpg'
+import others1 from '../Assets/other-s1.png'
+import others2 from '../Assets/other-s2.png'
+import others3 from '../Assets/other-s3.png'
+import others4 from '../Assets/other-s4.jpg'
 import EventCard from '../Componenets/Event_card/EventCard'
+import { useNavigate } from 'react-router-dom';
+
+
 
 function Home() {
+
+    const navigate = useNavigate();
+
+    const handleBoxClick = (path) => {
+        navigate(path);
+        window.scrollTo(0, 0);
+      };
+
   return (
       <>
         <div className='main-page'>
@@ -24,7 +39,7 @@ function Home() {
               
               <div className='intro-block'>
                   <div className='container intro'>
-                  <h5 className='intro-topic'>Welcome to Central Environment Authority
+                  <h5 className='intro-topic-p'>Welcome to Central Environment Authority
                   </h5>
                   <div className='intro-body'>
                       <p className='intro-para'>
@@ -62,11 +77,17 @@ function Home() {
                   </div>
               </div>
               </div>
+
+
+              
+
+
               
               <div className='container home-leader-section'>
               <LeaderCard/>
               </div>
 
+              
               <div className="service-cards-block">
                       <h5 className='services-topic'>Services</h5>
                   <div className='container service-cards'>
@@ -97,24 +118,70 @@ function Home() {
                        <ServiceCard
                       title="Public Complaints Related to Environment"
                       image={service7}
-                      />
-                      <ServiceCard
+                      /><ServiceCard
                       title="Provisions of GIS/RS Services"
                       image={service8}
-                  />
-                  </div>
-              </div>
+                    />
+                    </div>
+                    </div>
+                    
+                    {/* other services */}
+                    <div className='container important-info-section'>
+                      <h5 className='services-topic'>Other Services</h5>
+                      
+                      <div className='other-service-block'>
+                        <div className='info-row'>
+                          <div 
+                            className='info-box'
+                            onClick={() => handleBoxClick('/Complaints/Complaints')}
+                          >
+                            <img src={others1} alt='image' className='service-img' />
+                            <span className='links'>Complaints Submission</span>
+                          </div>
+                          
+                          <div 
+                            className='info-box'
+                            onClick={() => handleBoxClick('/NgoRegistartion/NgoRegistartion')}
+                          >
+                            <img src={others2} alt='image' className='service-img' />
+                            <span className='links'>Non-Governmental Environment Organization Registration</span>
+                          </div>
+                        </div>
+                        
+                        <div className='info-row'>
+                          <div 
+                            className='info-box'
+                            onClick={() => handleBoxClick('/environmental-org-registration')}
+                          >
+                            <img src={others3} alt='image' className='service-img' />
+                            <span className='links'>Job Opportunities</span>
+                          </div>
+                          
+                          <div 
+                            className='info-box'
+                            onClick={() => handleBoxClick('/NgoRegistartion/NgoRegistartion')}
+                          >
+                            <img src={others4} alt='image' className='service-img' />
+                            <span className='links'> Hazardous Waste Transit Approvals
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+              
+            
+              {/*news */}
+        <div className='news-events'>
               <div className='container event-block'>
-              <h5 className='event-topic'>Events & News</h5>
+                      <h5 className='services-topic'>Events & News</h5>
+                      <br/>
                       <EventCard/>
                    </div>
-          </div>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
+              </div>
+
+              </div>
+
       </>
   )
 }
