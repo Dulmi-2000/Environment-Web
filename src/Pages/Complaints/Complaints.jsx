@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './complaints.css'
 
+
 function Complaints() {
 
     const [formData, setFormData] = useState({
@@ -13,6 +14,7 @@ function Complaints() {
         contactMethod: '',
         consent: false
     });
+    
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -110,7 +112,8 @@ function Complaints() {
                         placeholder="Enter complainer's phone"
                         required
                     />
-                </div>
+                    </div>
+                    
 
                 <div className="form-group">
                     <label className='input-name'>Complaint Category:</label>
