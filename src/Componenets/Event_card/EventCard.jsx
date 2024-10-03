@@ -22,13 +22,17 @@ function EventCard() {
   const renderEventBox = (event, index) => (
     <div className='event-box' key={index}>
       <div className='img-section'>
-        <img src={event1} alt='event' className='event-img' />
+     
+                      {event.image && (
+                        <img src={`http://localhost:3000/${event.image}`} alt={event.title} className='event-img'/>
+                      )}
+                  
       </div>
       <div className='info-section-large'>
         <h5 className='event-name'>{event.title}</h5>
         <p className='para-large'>
           {event.content}
-          <section className='read-more'>Read More</section>
+         
         </p>
       </div>
     </div>

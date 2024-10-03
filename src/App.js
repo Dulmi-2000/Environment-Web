@@ -8,9 +8,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HeaderNav from './Componenets/NavbarHeader/HeaderNav';
 import ContactUsInquiries from './Pages/ContactUs/Inquiries';
 import AboutUs from './Pages/AboutUs/AboutUs';
-import Services from './Pages/Services/Services';
+import Services from './Pages/Services/Sevices'
 import Divisions from './Pages/Divisions/Divisions';
-import Media from './Pages/Media/Media';
 import Publications from './Pages/Publications/Publications';
 import Regulations from './Pages/Regulations/Regulations';
 import FAQ from './Pages/FAQ/FAQ';
@@ -20,6 +19,7 @@ import ContactDetails from './Pages/ContactUs/ContactDetails';
 import PhotoGallery from './Pages/Media/PhotoGallery/PhotoGallery'
 
 function App() {
+  
   return (
     <div className="App">
       <Router>
@@ -36,7 +36,6 @@ function App() {
           <Route path='/FAQ/FAQ' element={<FAQ />} />
           <Route path='/ContactUs/ContactUsInquiries' element={<ContactUsInquiries />} />
           <Route path='/ContactUs/ContactDetails' element={<ContactDetails />} />
-
           <Route path='/NgoRegistartion/NgoRegistartion' element={<NgoRegistartion />} />
           <Route path='/Complaints/Complaints' element={<Complaints />} />
         
