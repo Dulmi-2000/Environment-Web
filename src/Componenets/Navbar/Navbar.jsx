@@ -64,7 +64,7 @@ function Navbar({ onSearch }) {
                                 isActive ? 'nav-links active-nav-link' : 'nav-links'
                             } 
                             to='/Media/PhotoGallery'>
-                            Media
+                            Gallery
                         </NavLink>
                     </li>
                     <li className='nav-element'>
