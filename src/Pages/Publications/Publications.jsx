@@ -1,8 +1,39 @@
 import React from 'react'
 import './publications.css'
 import PageIntro from '../../Componenets/PageInto/PageIntro'
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function Publications() {
+
+  const [publications, setPublications] = useState([]);
+  const [groupedPublications, setGroupedPublications] = useState({});
+
+  // Fetch publications data from the server
+  useEffect(() => {
+    const fetchPublications = async () => {
+      try {
+        const response = await axios.get('http://localhost:3000/api/publications');
+        const pubs = response.data;
+
+        // Group publications by category
+        const grouped = pubs.reduce((acc, pub) => {
+          const categoryName = pub.categoryName || 'Uncategorized'; // Handle missing category
+          if (!acc[categoryName]) {
+            acc[categoryName] = [];
+          }
+          acc[categoryName].push(pub);
+          return acc;
+        }, {});
+
+        setGroupedPublications(grouped); // Set grouped publications in state
+      } catch (error) {
+        console.error('Error fetching publications:', error);
+      }
+    };
+    fetchPublications();
+  }, []);
+
   return (
     <>
       <div className='publications-page'> 
@@ -19,72 +50,35 @@ function Publications() {
            participation in preserving our natural heritage."
         />
 
-        <div className='container publications-body'>
-          <div className='downloads-table'>
-          <h5 className='contact-details-heading'>Environment Education and Awarness Division</h5>
-            <table className='data-table'>
-              <thead>
+<div className='container publications-body'>
+      {Object.keys(groupedPublications).map(categoryName => (
+        <div key={categoryName} className='downloads-table'>
+          <h5 className='contact-details-heading'>{categoryName}</h5>
+          <table className='data-table'>
+            <thead>
               <tr>
                 <th>Name of the Publication</th>
                 <th>Download</th>
               </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td> EPP and ECO Club Targets 2017</td>
-                  <td>  
-                    <a href="http://localhost:5001/download/EPP_AND_ECO_-_Web_page_New_-_English" download>
-                    <button className='submit-btn'>Download</button>
-                   </a></td>
+            </thead>
+            <tbody>
+              {groupedPublications[categoryName].map(pub => (
+                <tr key={pub._id}>
+                  <td>{pub.displayName}</td>
+                  <td>
+                    <a href={`http://localhost:3000/api/download/${pub._id}`} download> 
+                      <button className='submit-btn'>Download</button>
+                      
+                    </a>
+                  </td>
                 </tr>
-              </tbody>
-
-            </table>
-          </div>
-        
-        <div className='downloads-table'>
-          <h5 className='contact-details-heading'>Air Quality & Lab Services Unit</h5>
-            <table className='data-table'>
-              <thead>
-              <tr>
-                <th>Name of the Publication</th>
-                <th>Download</th>
-              </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>  Guideline for Rail Noise Assessment Criteria for Rapid Rail Transit Systems</td>
-                  <td>  
-                    <a href="http://localhost:5001/download/Rapid-Rail-Guideline-CEA_Compressed" download>
-                    <button className='submit-btn'>Download</button>
-                   </a></td>
-                </tr>
-                <tr>
-                  <td> Guideline for Traffic Noise Assessment Criteria for Expressways</td>
-                  <td>  
-                    <a href="http://localhost:5001/download/Expressway-Guideline-CEA_Compressed" download>
-                    <button className='submit-btn'>Download</button>
-                   </a></td>
-                </tr>
-                <tr>
-                  <td>	Air Quality Index for Sri Lanka (AQI-SL), Calculation & Guideline - CEA.LK - V1.0.</td>
-                  <td>  
-                    <a href="http://localhost:5001/download/AQI-SL_Calculation_Guideline_CEA.LK_V1.0" download>
-                    <button className='submit-btn'>Download</button>
-                   </a></td>
-                </tr>
-                <tr>
-                  <td>	Contingency Response Action Plan for Deterioration of Air Quality in Sri Lanka (CRAP-DAQ-SL) V1.0</td>
-                  <td>  
-                    <a href="http://localhost:5001/download/CRAP-DAQ-SL_Contingency_Response_Action_Plan_for_Deterioration_of_Air_Quality_in_Sri_Lanka_V1.0-1" download>
-                    <button className='submit-btn'>Download</button>
-                   </a></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          </div>
-    </div>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ))}
+        </div>
+        </div>
     </>
   )
 }

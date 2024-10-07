@@ -10,8 +10,21 @@ import service7 from '../../Assets/service7.jpg'
 import service8 from '../../Assets/service8.jpg'
 import './services.css'
 import PageIntro from '../../Componenets/PageInto/PageIntro'
+import others1 from '../../Assets/other-s1.png'
+import others2 from '../../Assets/other-s2.png'
+import others3 from '../../Assets/other-s3.png'
+import others4 from '../../Assets/other-s4.jpg'
+import { useNavigate } from 'react-router-dom';
+
 
 function Sevices() {
+  const navigate = useNavigate();
+
+  const handleBoxClick = (path) => {
+      navigate(path);
+      window.scrollTo(0, 0);
+    };
+
   return (
     <div>
       <PageIntro 
@@ -57,7 +70,50 @@ function Sevices() {
                       image={service8}
                     />
                     </div>
-                    </div>
+      </div>
+      <div className='container important-info-section'>
+                      <h5 className='heading'>Other Services</h5>
+                      
+                      <div className='other-service-block'>
+                        <div className='info-row'>
+                          <div 
+                            className='info-box'
+                            onClick={() => handleBoxClick('/Complaints/Complaints')}
+                          >
+                            <img src={others1} alt='image' className='service-img' />
+                            <span className='links'>Complaints Submission</span>
+                          </div>
+                          
+                          <div 
+                            className='info-box'
+                            onClick={() => handleBoxClick('/NgoRegistartion/NgoRegistartion')}
+                          >
+                            <img src={others2} alt='image' className='service-img' />
+                            <span className='links'>Non-Governmental Environment Organization Registration</span>
+                          </div>
+                        </div>
+                        
+                        <div className='info-row'>
+                          <div 
+                            className='info-box'
+                            onClick={() => handleBoxClick('/environmental-org-registration')}
+                          >
+                            <img src={others3} alt='image' className='service-img' />
+                            <span className='links'>Job Opportunities</span>
+                          </div>
+                          
+                          <div 
+                            className='info-box'
+                            onClick={() => handleBoxClick('/NgoRegistartion/NgoRegistartion')}
+                          >
+                            <img src={others4} alt='image' className='service-img' />
+                            <span className='links'> Hazardous Waste Transit Approvals
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+      </div>
+      <br/><br/><br/><br/>
                     
     </div>
   )
