@@ -6,7 +6,6 @@ import axios from 'axios';
 
 function Publications() {
 
-  const [publications, setPublications] = useState([]);
   const [groupedPublications, setGroupedPublications] = useState({});
 
   // Fetch publications data from the server
@@ -18,7 +17,7 @@ function Publications() {
 
         // Group publications by category
         const grouped = pubs.reduce((acc, pub) => {
-          const categoryName = pub.categoryName || 'Uncategorized'; // Handle missing category
+          const categoryName = pub.categoryName || 'Uncategorized'; 
           if (!acc[categoryName]) {
             acc[categoryName] = [];
           }
@@ -26,7 +25,7 @@ function Publications() {
           return acc;
         }, {});
 
-        setGroupedPublications(grouped); // Set grouped publications in state
+        setGroupedPublications(grouped); 
       } catch (error) {
         console.error('Error fetching publications:', error);
       }
