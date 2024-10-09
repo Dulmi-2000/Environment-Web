@@ -85,7 +85,7 @@ function Navbar({ onSearch }) {
                             Regulations
                         </NavLink>
                     </li>
-                    <li className='nav-element'>
+                    {/* <li className='nav-element'>
                         <NavLink 
                             className={({ isActive }) => 
                                 isActive ? 'nav-links active-nav-link' : 'nav-links'
@@ -93,7 +93,7 @@ function Navbar({ onSearch }) {
                             to='/FAQ/FAQ'>
                             FAQ
                         </NavLink>
-                    </li>
+                    </li> */}
                     <li className='nav-element'>
                         <div className='dropdown'>
                          <div className='nav-links'>

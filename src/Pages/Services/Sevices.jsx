@@ -1,4 +1,5 @@
 import React from 'react'
+import './services.css'
 import ServiceCard from '../../Componenets/Service_Card/ServiceCard'
 import service1 from '../../Assets/service1.jpg'
 import service2 from '../../Assets/service2.webp'
@@ -8,7 +9,6 @@ import service5 from '../../Assets/service5.jpg'
 import service6 from '../../Assets/service6.jpg'
 import service7 from '../../Assets/service7.jpg'
 import service8 from '../../Assets/service8.jpg'
-import './services.css'
 import PageIntro from '../../Componenets/PageInto/PageIntro'
 import others1 from '../../Assets/other-s1.png'
 import others2 from '../../Assets/other-s2.png'
@@ -70,8 +70,8 @@ function Sevices() {
                       image={service8}
                     />
                     </div>
-      </div>
-      <div className='container important-info-section'>
+                 </div>
+                 <div className='container important-info-section'>
                       <h5 className='heading'>Other Services</h5>
                       
                       <div className='other-service-block'>
